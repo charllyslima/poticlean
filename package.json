@@ -1,0 +1,25 @@
+{
+  "name": "poticlean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/assets/scss/style.scss src/assets/css/style.css",
+    "watch": "sass src/assets/scss/style.scss src/assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charllyslima/poticlean.git"
+  },
+  "author": "Charllys de Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charllyslima/poticlean/issues"
+  },
+  "homepage": "https://github.com/charllyslima/poticlean#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "popper.js": "^1.16.1",
+    "sass": "^1.57.1"
+  }
+}
