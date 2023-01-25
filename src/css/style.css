@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@400&display=swap");
-@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10792,14 +10792,6 @@ section {
 
 .display-1 {
   font-size: 10rem;
-}
-
-.mb-10 {
-  margin-bottom: 7rem;
-}
-
-#sobre .row {
-  height: 50vh;
 }
 
 .text-blue {
