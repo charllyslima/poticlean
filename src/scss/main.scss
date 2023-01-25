@@ -20,10 +20,24 @@
 
 section {
   height: 100vh;
+  padding-top: 90px;
+}
+
+#servicos {
+  height: 50vh;
+  background: $dark-green;
+}
+
+#galeria {
+  background: $dark-gray;
 }
 
 .w-400 {
   font-size: 10rem;
+}
+
+#map {
+  height: 50vh;
 }
 
 .text-blue {

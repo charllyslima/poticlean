@@ -23,13 +23,13 @@
                         <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item text-uppercase">
-                        <a class="nav-link" href="#">Nossos serviços</a>
+                        <a class="nav-link" href="#servicos">Nossos serviços</a>
                     </li>
                     <li class="nav-item text-uppercase">
-                        <a class="nav-link" href="#">Portifolio</a>
+                        <a class="nav-link" href="#galeria">Portifolio</a>
                     </li>
                     <li class="nav-item text-uppercase">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +59,6 @@
                         <h1 class="display-3">Quem somos</h1>
                         <p>Favere semper ducunt ad nobilis frondator.</p>
                     </div>
-
                 </div>
             </div>
             <hr class="mx-5">
@@ -80,6 +79,100 @@
             </div>
         </div>
     </section>
+    <section id="servicos" class="text-white d-flex align-items-center">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h1 class="display-3">Serviços</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 col-lg-6">
+                    <h2>Higienização de sofás colchões e tapetes</h2>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2>Limpeza de vidro, vitrine e fachada</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="galeria" class="text-white pb-5">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-3 text-center">Portifolio</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-3">
+                    <img src="./images/logo_real.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                    <img src="./images/logo_real.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                    <img src="./images/logo_real.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                    <img src="./images/logo_real.jpg" class="img-thumbnail" alt="...">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-3">
+                    <img src="./images/logo_real.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                    <img src="./images/logo_real.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                    <img src="./images/logo_real.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                    <img src="./images/logo_real.jpg" class="img-thumbnail" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-3 text-center">Contato</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div id="map"></div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center px-5">
+                    <form class="w-100" method="post">
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto</label>
+                            <input type="email" class="form-control" id="assunto" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea name="" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+            defer
+    ></script>
 </main>
 </body>
 </html>
