@@ -21,6 +21,12 @@
 section {
   height: 100vh;
   padding-top: 90px;
+
+  .galeria {
+    overflow-y: auto;
+    height: 60vh;
+  }
+
 }
 
 #servicos {
@@ -42,4 +48,49 @@ section {
 
 .text-blue {
   color: $blue;
+}
+
+.hover-effect figure {
+  background: black;
+}
+
+.hover-effect figure img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  display: inline-block;
+}
+
+.hover-effect {
+  width: 435px;
+  max-height: 275px;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.hover-effect figure:hover img {
+  opacity: .5;
+  transform:scale(1.5);
+  -ms-transform:scale(1.5); /* IE 9 */
+  -moz-transform:scale(1.5); /* Firefox */
+  -webkit-transform:scale(1.5); /* Safari and Chrome */
+  -o-transform:scale(1.5); /* Opera */
+}
+
+.portfolio-menu {
+  text-align: center;
+}
+
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all .5s ease;
 }
