@@ -3,6 +3,7 @@ import '../scss/main.scss';
 
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
+import 'animate.css';
 
 // Loading bootstrap with optional features
 initBootstrap({
@@ -35,3 +36,38 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+const types = document.querySelectorAll('.type-gallery');
+const items = document.querySelectorAll('.item');
+types.forEach(elm => {
+    elm.addEventListener('click', e => {
+        types.forEach(el => {
+            el.classList.remove('active');
+        })
+        e.target.classList.add('active');
+        const filter = e.target.getAttribute('data-filter').toUpperCase();
+        items.forEach(el => {
+            const type = el.getAttribute('data-type').toUpperCase();
+            if (filter !== '*') {
+                if (type === filter) {
+                    if (el.classList.contains('animate__zoomOut')) {
+                        el.classList.remove('d-none');
+                        el.classList.add('animate__zoomIn');
+                        el.classList.remove('animate__zoomOut');
+                    }
+                } else {
+                    el.classList.add('animate__zoomOut');
+                    setTimeout(() => {
+                        el.classList.add('d-none');
+                    },750)
+                }
+            } else {
+                el.classList.remove('d-none');
+                if (el.classList.contains('animate__zoomOut')) {
+                    el.classList.add('animate__zoomIn');
+                    el.classList.remove('animate__zoomOut');
+                }
+            }
+        })
+    });
+})
